@@ -9,8 +9,8 @@ export default function Header() {
                         <div className="flex items-center">
                             <div className="flex-shrink-0 relative flex items-center">
                                 {/* <img src="/img/icon.png" alt="icon" /> */}
-                                <span className="text-white text-2xl font-mono">
-                                    KEEPER - Keep Your Notes
+                                <span className="text-white text-2xl heading font-semi-bold">
+                                    KEEPER <span className="text-sm">- Keep Your Notes</span>
                                 </span>
                             </div>
                         </div>

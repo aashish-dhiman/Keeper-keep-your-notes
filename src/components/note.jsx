@@ -1,12 +1,17 @@
 import React from "react";
+import Notes from "./data";
+import PropDisplay from "./propDisplay";
+
+function createNote(note) {
+    return (
+        <PropDisplay key={note.id} title={note.title} content={note.content} />
+    );
+}
 
 export default function Note() {
     return (
         <div className="flex-grow">
-            <div className="bg-white p-2.5 m-4 rounded-md shadow-[0_2px_5px_#ccc] w-60 h-fit">
-                <h1>Note Title</h1>
-                <p>This is the sample note content</p>
-            </div>
+            <div className="grid gap-4 grid-cols-4">{Notes.map(createNote)}</div>
         </div>
     );
 }
