@@ -45,17 +45,6 @@ const Notes = [
         "content":
             "1. Build a personal finance management app 2. Create a recipe-sharing platform 3. Develop a language learning website",
     },
-    {
-        "id": "9",
-        "title": "Daily Goals",
-        "content":
-            "1. Complete 1 hour of exercise 2. Read 50 pages of a book 3. Practice coding for 2 hours",
-    },
-    {
-        "id": "10",
-        "title": "Gift Ideas",
-        "content": "1. Perfume 2. Watch 3. Handmade greeting card",
-    },
 ];
 
 export default Notes;

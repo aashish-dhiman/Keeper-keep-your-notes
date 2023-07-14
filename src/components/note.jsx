@@ -1,17 +1,23 @@
 import React from "react";
-import Notes from "./data";
 import PropDisplay from "./propDisplay";
 
-function createNote(note) {
-    return (
-        <PropDisplay key={note.id} title={note.title} content={note.content} />
-    );
-}
-
-export default function Note() {
+export default function Note(props) {
     return (
         <div className="flex-grow">
-            <div className="grid gap-4 grid-cols-4">{Notes.map(createNote)}</div>
+            <div className="grid gap-2 md:gap-4 grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 ">
+                {props.notes.map((note, index) => {
+                    console.log(index);
+                    return (
+                        <PropDisplay
+                            {...props}
+                            key={index}
+                            id={index}
+                            title={note.title}
+                            content={note.content}
+                        />
+                    );
+                })}
+            </div>
         </div>
     );
 }
