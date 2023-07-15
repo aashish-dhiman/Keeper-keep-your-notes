@@ -1,6 +1,6 @@
 # Keeper-keep-your-notes
 
-A note-taking website inspired by Google Keep, built using React and styled with Tailwind CSS.
+A note-taking website inspired by Google Keep, built using React and styled with Tailwind CSS and Material UI.
 
 ## Features
 
@@ -46,6 +46,7 @@ A note-taking website inspired by Google Keep, built using React and styled with
 
 - React
 - Tailwind CSS
+- Material UI
 
 ## Available Scripts
 
