@@ -1,10 +1,14 @@
 import React, { useState } from "react";
+import AddIcon from "@mui/icons-material/Add";
+import { Zoom, Fab } from "@mui/material";
 
 const CreateNote = (props) => {
     const [note, setNote] = useState({
         title: "",
         content: "",
     });
+
+    const [isExpanded, setExpanded] = useState(false);
 
     const areInputsEmpty = () => {
         return note.title.trim() === "" || note.content.trim() === "";
@@ -34,35 +38,50 @@ const CreateNote = (props) => {
             title: "",
             content: "",
         });
+        setExpanded(false);
+    }
+
+    function handleTextArea() {
+        setExpanded(true);
     }
 
     return (
-        <form className="flex justify-center mb-10" action="">
-            <div className="flex flex-col grow lg:grow-0 md:grow-0 sm:grow-0 bg-white p-2.5 m-4 rounded-xl shadow-[0_0_12px_4px_#ccc] w-1/3 h-5/6 p-4 divide-y divide-slate-500 font-medium relative">
-                <input
-                    className="focus:outline-none px-3 py-2"
-                    type="text"
-                    name="title"
-                    placeholder="Title"
-                    value={note.title}
-                    onChange={handleChange}
-                />
+        <form className="flex justify-center mb-10">
+            <div className="flex flex-col grow lg:grow-0 md:grow-0 sm:grow-0 bg-white p-2.5 m-4 rounded-xl hover:shadow-[0_0_12px_4px_#ccc] border-2 border-zinc-200 w-1/3 p-4 divide-y divide-slate-500 font-medium">
+                {isExpanded && (
+                    <input
+                        className="focus:outline-none px-3 py-2"
+                        type="text"
+                        name="title"
+                        placeholder="Title"
+                        value={note.title}
+                        onChange={handleChange}
+                    />
+                )}
                 <textarea
-                    className="focus:outline-none px-3 py-2 font-normal text-sm"
+                    className="focus:outline-none p-2 resize-none font-normal text-sm"
                     name="content"
                     placeholder="Take a note..."
                     cols="50"
-                    rows="5"
+                    rows={isExpanded ? 3 : 1}
                     value={note.content}
                     onChange={handleChange}
+                    onClick={handleTextArea}
                 ></textarea>
-                <button
-                    onClick={handleClick}
-                    className="rounded-full bg-[#f5ba13] text-white text-[10px] w-8 h-8 absolute right-2 -bottom-10 hover:scale-[1.02]"
-                    type="submit"
-                >
-                    Add
-                </button>
+                {isExpanded ? (
+                    <Zoom in={true}>
+                        <Fab
+                            onClick={handleClick}
+                            size="small"
+                            className="flex self-end hover:text-[#f5ba13]"
+                            type="submit"
+                        >
+                            <AddIcon />
+                        </Fab>
+                    </Zoom>
+                ) : (
+                    ""
+                )}
             </div>
         </form>
     );

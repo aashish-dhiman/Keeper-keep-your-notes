@@ -6,7 +6,6 @@ export default function Note(props) {
         <div className="flex-grow">
             <div className="grid gap-2 md:gap-4 grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 ">
                 {props.notes.map((note, index) => {
-                    console.log(index);
                     return (
                         <PropDisplay
                             {...props}

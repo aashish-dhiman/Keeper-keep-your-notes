@@ -5,13 +5,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300;400&display=swap");
 
-html {
+body {
+    background-color: #fcfaf9;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+span {
     font-family: "Ubuntu", sans-serif;
     scroll-behavior: smooth;
 }
+
 p {
     font-family: "Roboto", sans-serif;
 }
+
 ::-webkit-scrollbar {
     width: 4px;
 }

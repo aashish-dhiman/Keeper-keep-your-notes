@@ -1,5 +1,5 @@
 import React from "react";
-
+import DescriptionIcon from '@mui/icons-material/Description';
 export default function Header() {
     return (
         <header>
@@ -8,9 +8,13 @@ export default function Header() {
                     <div className="flex items-center justify-between h-16">
                         <div className="flex items-center">
                             <div className="flex-shrink-0 relative flex items-center">
-                                {/* <img src="/img/icon.png" alt="icon" /> */}
-                                <span className="text-white text-2xl heading font-semi-bold">
-                                    KEEPER <span className="text-sm">- Keep Your Notes</span>
+                                {/* <img src="./img/icon.png" alt="icon" /> */}
+                                <DescriptionIcon className="text-white hover:rotate-180"/>
+                                <span className="text-white ml-2 text-2xl heading font-semi-bold">
+                                    KEEPER{" "}
+                                    <span className="text-sm">
+                                        - Keep Your Notes
+                                    </span>
                                 </span>
                             </div>
                         </div>
