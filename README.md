@@ -1,6 +1,51 @@
-# Getting Started with Create React App
+# Keeper-keep-your-notes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A note-taking website inspired by Google Keep, built using React and styled with Tailwind CSS.
+
+## Features
+
+- Add new notes with a title and content.
+- Delete existing notes.
+- Responsive design.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/Keeper-keep-your-notes.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd Keeper-keep-your-notes
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+5. Open your browser and visit `http://localhost:3000` to view the website.
+
+## Usage
+
+- To add a new note, click on the "Add Note" button. Enter a title and content for the note in the input fields and click "Save".
+- To delete a note, click on the "Delete" button next to the note you want to remove.
+- The website is responsive and adjusts its layout based on the screen size, providing an optimal user experience on various devices.
+
+## Technologies Used
+
+- React
+- Tailwind CSS
 
 ## Available Scripts
 
@@ -38,33 +83,3 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
